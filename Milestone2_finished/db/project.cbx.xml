@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="project">
+		<CBX_INST_ENTRY INSTANCE_NAME="|project|milestone2:milestone2_unit|dual_port_RAM0:dual_port_RAM_inst0|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_tq92.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|project|milestone2:milestone2_unit|dual_port_RAM1:dual_port_RAM_inst1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_lq92.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|project|milestone2:milestone2_unit|dual_port_RAM2:dual_port_RAM_inst2|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_vq92.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

@@ -1,0 +1,113 @@
+
+State Machine - |project|milestone2:milestone2_unit|M2_state
+Name M2_state~9 M2_state~8 M2_state~7 M2_state~6 M2_state~5 M2_state~4 
+M2_state.M2_IDLE 0 0 0 0 0 0 
+M2_state.M2_DELAY 0 0 0 0 0 1 
+M2_state.SRAM_DELAY1 0 0 0 0 1 1 
+M2_state.M2_FETCH0 0 0 0 1 0 1 
+M2_state.M2_FETCH1 0 0 0 1 1 0 
+M2_state.M2_FETCH2 0 0 0 1 1 1 
+M2_state.M2_COMPUTE_T0 0 1 0 0 0 1 
+M2_state.M2_COMPUTE_T1 0 1 0 0 1 0 
+M2_state.M2_COMPUTE_T2 0 1 0 0 1 1 
+M2_state.M2_COMPUTE_T3 0 1 0 1 0 0 
+M2_state.M2_COMPUTE_T4 0 1 0 1 0 1 
+M2_state.M2_COMPUTE_T5 0 1 0 1 1 0 
+M2_state.M2_COMPUTE_T6 0 1 0 1 1 1 
+M2_state.M2_COMPUTE_T7 0 1 1 0 0 0 
+M2_state.M2_COMPUTE_T8 0 1 1 0 0 1 
+M2_state.M2_COMPUTE_T9 0 1 1 0 1 0 
+M2_state.END 0 1 1 0 1 1 
+M2_state.Mega1 0 1 1 1 1 0 
+M2_state.Mega2 0 1 1 1 1 1 
+M2_state.Mega3 1 0 0 0 0 0 
+M2_state.Mega4 1 0 0 0 0 1 
+M2_state.Mega5 1 0 0 0 1 0 
+M2_state.Mega6 1 0 0 0 1 1 
+M2_state.Mega7 1 0 0 1 0 0 
+M2_state.Mega8 1 0 0 1 0 1 
+M2_state.Mega9 1 0 0 1 1 0 
+M2_state.Mega10 1 0 0 1 1 1 
+M2_state.Mega11 1 0 1 0 0 0 
+M2_state.Mega12 1 0 1 0 0 1 
+M2_state.Mega13 1 0 1 0 1 0 
+M2_state.Mega14 1 0 1 0 1 1 
+M2_state.Mega15 1 0 1 1 0 0 
+M2_state.Mega16 1 0 1 1 0 1 
+M2_state.Mega17 1 0 1 1 1 0 
+M2_state.Mega18 1 0 1 1 1 1 
+M2_state.Mega19 1 1 0 0 0 0 
+M2_state.Mega20 1 1 0 0 0 1 
+M2_state.Mega21 1 1 0 0 1 0 
+M2_state.Mega22 1 1 0 0 1 1 
+M2_state.Mega23 1 1 0 1 0 0 
+M2_state.Mega24 1 1 0 1 0 1 
+M2_state.Mega25 1 1 0 1 1 0 
+
+State Machine - |project|UART_SRAM_interface:UART_unit|UART_SRAM_state
+Name UART_SRAM_state~13 UART_SRAM_state~12 UART_SRAM_state~11 
+UART_SRAM_state.S_US_IDLE 0 0 0 
+UART_SRAM_state.S_US_STRIP_FILE_HEADER_1 0 0 1 
+UART_SRAM_state.S_US_STRIP_FILE_HEADER_2 0 1 0 
+UART_SRAM_state.S_US_START_FIRST_BYTE_RECEIVE 0 1 1 
+UART_SRAM_state.S_US_WRITE_FIRST_BYTE 1 0 0 
+UART_SRAM_state.S_US_START_SECOND_BYTE_RECEIVE 1 0 1 
+UART_SRAM_state.S_US_WRITE_SECOND_BYTE 1 1 0 
+
+State Machine - |project|UART_SRAM_interface:UART_unit|UART_Receive_Controller:UART_RX|RXC_state
+Name RXC_state~9 RXC_state~8 
+RXC_state.S_RXC_IDLE 0 0 
+RXC_state.S_RXC_SYNC 0 1 
+RXC_state.S_RXC_ASSEMBLE_DATA 1 0 
+RXC_state.S_RXC_STOP_BIT 1 1 
+
+State Machine - |project|VGA_SRAM_interface:VGA_unit|VGA_SRAM_state
+Name VGA_SRAM_state~17 VGA_SRAM_state~16 VGA_SRAM_state~15 VGA_SRAM_state~14 
+VGA_SRAM_state.S_VS_WAIT_NEW_PIXEL_ROW 0 0 0 0 
+VGA_SRAM_state.S_VS_NEW_PIXEL_ROW_DELAY_1 0 0 0 1 
+VGA_SRAM_state.S_VS_NEW_PIXEL_ROW_DELAY_2 0 0 1 0 
+VGA_SRAM_state.S_VS_NEW_PIXEL_ROW_DELAY_3 0 0 1 1 
+VGA_SRAM_state.S_VS_NEW_PIXEL_ROW_DELAY_4 0 1 0 0 
+VGA_SRAM_state.S_VS_NEW_PIXEL_ROW_DELAY_5 0 1 0 1 
+VGA_SRAM_state.S_VS_FETCH_PIXEL_DATA_0 0 1 1 0 
+VGA_SRAM_state.S_VS_FETCH_PIXEL_DATA_1 0 1 1 1 
+VGA_SRAM_state.S_VS_FETCH_PIXEL_DATA_2 1 0 0 0 
+VGA_SRAM_state.S_VS_FETCH_PIXEL_DATA_3 1 0 0 1 
+
+State Machine - |project|milestone1:M1_unit|M1_state
+Name M1_state~9 M1_state~8 M1_state~7 M1_state~6 M1_state~5 M1_state~4 
+M1_state.M1_IDLE 0 0 0 0 0 0 
+M1_state.M1_LEAD_0 0 0 0 0 0 1 
+M1_state.M1_LEAD_1 0 0 0 0 1 0 
+M1_state.M1_LEAD_2 0 0 0 0 1 1 
+M1_state.M1_LEAD_3 0 0 0 1 0 0 
+M1_state.M1_LEAD_4 0 0 0 1 0 1 
+M1_state.M1_LEAD_5 0 0 0 1 1 0 
+M1_state.M1_LEAD_6 0 0 0 1 1 1 
+M1_state.M1_LEAD_7 0 0 1 0 0 0 
+M1_state.M1_LEAD_8 0 0 1 0 0 1 
+M1_state.M1_LEAD_9 0 0 1 0 1 0 
+M1_state.M1_LEAD_10 0 0 1 0 1 1 
+M1_state.M1_COMMON_1 0 0 1 1 0 0 
+M1_state.M1_COMMON_2 0 0 1 1 0 1 
+M1_state.M1_COMMON_3 0 0 1 1 1 0 
+M1_state.M1_COMMON_4 0 0 1 1 1 1 
+M1_state.M1_COMMON_5 0 1 0 0 0 0 
+M1_state.M1_COMMON_6 0 1 0 0 0 1 
+M1_state.M1_COMMON_7 0 1 0 0 1 0 
+M1_state.M1_COMMON_8 0 1 0 0 1 1 
+M1_state.M1_COMMON_9 0 1 0 1 0 0 
+M1_state.M1_COMMON_10 0 1 0 1 0 1 
+M1_state.M1_COMMON_11 0 1 0 1 1 0 
+M1_state.M1_COMMON_12 0 1 0 1 1 1 
+M1_state.M1_OUT_1 0 1 1 0 0 0 
+M1_state.M1_OUT_2 0 1 1 0 0 1 
+M1_state.M1_OUT_3 0 1 1 0 1 0 
+M1_state.M1_OUT_4 0 1 1 0 1 1 
+M1_state.M1_OUT_5 0 1 1 1 0 0 
+M1_state.M1_OUT_6 0 1 1 1 0 1 
+M1_state.M1_OUT_7 0 1 1 1 1 0 
+M1_state.M1_OUT_8 0 1 1 1 1 1 
+M1_state.M1_OUT_9 1 0 0 0 0 0 
+M1_state.M1_OUT_10 1 0 0 0 0 1 
+M1_state.M1_OUT_11 1 0 0 0 1 0 
